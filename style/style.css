@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Definindo variáveis padrão */
+:root {
+    --cor-primaria: #EA1744;
+    --cor-secundaria: #F3E4F5;
+    --cor-terciaria: #FF6542;
+    --cor-quartenaria: white;
+    --cor-quintenaria: pink;
+    --cor-background: #FFF2EB;
+
+    --fonte-primaria: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-background);
+    font-family: var(--fonte-primaria);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    height: 100vh;
+}
+
+.conteudo__entrada {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 50%;
+    margin-left: 6%;
+    gap: 6rem;
+}
+
+.conteudo__entrada__texto {
+    background-color: var(--cor-background);
+    color: var(--cor-primaria);
+    font-size: 1rem;
+    border: none;
+    outline: 0;
+    resize: none;
+}
+
+.conteudo__entrada__texto::-webkit-scrollbar {
+    width: 0.18rem;
+    height: 0.18rem;
+}
+
+.conteudo__entrada__texto::-webkit-scrollbar-track {
+    background: transparent;
+    padding: 0.12rem;
+}
+
+.conteudo__entrada__texto::-webkit-scrollbar-thumb {
+    background-color: var(--cor-background);
+}
+
+.conteudo__entrada__texto::placeholder {
+    color: var(--cor-primaria);
+}
+
+.conteudo__entrada__advertencia {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.advertencia__texto {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    gap: 0.5rem;
+    font-size: 0.6rem;
+    color: var(--cor-primaria);
+}
+
+.advertencia__icone {
+    height: 1rem;
+    width: 1rem;
+}
+
+.conteudo__entrada__botoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.btn-criptografar {
+    background-color: var(--cor-primaria);
+    width: 20.5rem;
+    padding: 1.5rem;
+    color: var(--cor-quartenaria);
+    border-radius: 1.5rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-criptografar:hover {
+    background-color: var(--cor-quintenaria);
+    border: 0.06rem solid var(--cor-primaria);
+}
+
+.btn-descriptografar {
+    background-color: var(--cor-secundaria);
+    width: 20.5rem;
+    padding: 1.5rem;
+    color: var(--cor-primaria);
+    border-radius: 1.5rem;
+    border: 0.06rem solid var(--cor-primaria);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-descriptografar:hover {
+    background-color: var(--cor-quintenaria);
+}
+
+.conteudo__resultado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background-color: var(--cor-quartenaria);
+    border-radius: 2rem;
+    height: 65%;
+    width: 25%;
+    text-align: center;
+    gap: 4%;
+    margin-top: 0.8rem;
+    color: var(--cor-primaria);
+}
+
+.conteudo__resultado__imagem {
+    width: 50%;
+    margin-left: 30%;
+}
+
+.conteudo__resultado__titulo {
+    font-size: 0.8rem;
+    margin-bottom: 3%;
+}
+
+.conteudo__resultado__paragrafo {
+    font-size: 0.6rem;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    bottom: 1rem;
+    position: fixed;
+    width: 90%;
+    text-align: center;
+    color: var(--cor-primaria);
+    font-size: 0.5rem;
+}
+
+.conteudo__resultado__resultado {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    gap: 4%;
+    margin-top: 0.8rem;
+    color: var(--cor-primaria);
+    border: 0.06rem solid var(--cor-);
+}
+
+.conteudo__resultado__resultado::-webkit-scrollbar {
+    width: 0.18rem;
+    height: 0.18rem;
+
+}
+
+.conteudo__resultado__resultado::-webkit-scrollbar-track {
+    background: transparent;
+    padding: 0.12rem;
+}
+
+.conteudo__resultado__resultado::-webkit-scrollbar-thumb {
+    background-color: var(--cor-background);
+}
+
+.conteudo__resultado__botoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.btn-copiar {
+    border-radius: 0.5rem;
+    width: 5rem;
+    margin-bottom: 50px;
+    border: none;
+    background-color: var(--cor-primaria);
+    color: var(--cor-quartenaria);
+    cursor: pointer;
+}
+
+.botao__copiar:hover {
+    background-color: var(--cor-quintenaria);
+}
+
+.btn-limpar {
+    border-radius: 0.5rem;
+    width: 5rem;
+    margin-bottom: 50px;
+    color: var(--cor-primaria);
+    border: 0.06rem solid var(--cor-primaria);
+    cursor: pointer;
+}
+
+.botao__limpar:hover {
+    background-color: var(--cor-quartenaria);
+}

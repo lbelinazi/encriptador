@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>encriptador</title>
+</head>
+
+<body>
+
+    <main class="conteudo">
+
+        <section class="conteudo__entrada">
+            <textarea id="entrada__texto" class="conteudo__entrada__texto" type="text"
+                placeholder="boas vindas ao encriptador de texto. digite seu texto aqui " cols="20"
+                rows="10"></textarea>
+            <div class="conteudo__entrada__advertencia">
+                <div class="advertencia__texto">
+                    <img class="advertencia__icone" src="./assets/exclamacao.png" alt="">
+                    <p>apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="conteudo__entrada__botoes">
+                    <button onclick="btnCriptografar()" class="btn-criptografar">criptografar</button>
+                    <button onclick="btnDescriptografar()" class="btn-descriptografar">descriptografar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="conteudo__resultado">
+            <div>
+                <img id="secao__2__imagem" class="conteudo__resultado__imagem" src="./assets/boneco.png" alt="">
+                <div id="secao__2__texto">
+                    <h1 class="conteudo__resultado__titulo">nenhuma mensagem encontrada</h1>
+                    <p class="conteudo__resultado__paragrafo">digite um texto que você deseja criptografar ou
+                        descriptografar.</p>
+                </div>
+            </div>
+            <textarea id="saida__texto" class="conteudo__resultado__resultado"></textarea>
+            <div class="conteudo__resultado__botoes">
+                <button id="btn__copiar" class="btn-copiar">copiar</button>
+                <button id="btn__limpar" class="btn-limpar">limpar</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">Desenvolvido por Larissa Belinazi.</footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
